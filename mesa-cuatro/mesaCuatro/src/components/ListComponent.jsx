@@ -32,7 +32,7 @@ const ListComponent = (props) => {
         
         {valor.map((valor) => {
             return (
-                
+                <div>
                  <Card
                   key={valor.id} 
                   horas ={valor.horas}
@@ -41,7 +41,7 @@ const ListComponent = (props) => {
                   tobogan ={valor.tobogan} 
                   carrusel ={valor.carrusel}
                  /> 
-                   
+                </div>   
                 )
             })
         }

@@ -2,11 +2,11 @@ import React from 'react'
 
 const Card = (props) => {
   return (
-    <div>      
+    <div className='card'>      
              <table>
-            <tr>
-                <td>Actividad por {props.horas} horas</td>
-                <td>Valor Total </td>
+            <tr >
+                <td className='titulo'>Actividad por {props.horas} horas</td>
+                <td className='titulo'>Valor Total </td>
             </tr>
             <tr>
                 <td>Inflables</td>
@@ -23,8 +23,7 @@ const Card = (props) => {
             <tr>
                 <td>Carrusel</td>
                 <td>{props.carrusel*4}</td>
-            </tr> 
-            <br/>        
+            </tr>       
         </table>        
    
     </div> 
