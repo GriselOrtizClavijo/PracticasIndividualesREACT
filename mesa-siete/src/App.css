@@ -1,10 +1,8 @@
 #root {
   max-width: 1280px;
-  max-height: max-content;
   margin: 0 auto;
-  padding: 0px;
+  padding: 2rem;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .logo {
@@ -36,27 +34,22 @@
 }
 
 .card {
-  
-  width: 60vh;
-  height: 50vh;
-  border: 3px solid rgb(227, 190, 0);
-  margin: 2vh;
-  border-radius: 3vh;
+  padding: 1em;
+  display: flex;
+ justify-content: space-around;
+
 }
 
 .read-the-docs {
- /* background-image: url(/ProyectoViteFront/public/girasoles.jpeg); */
-  background-color: rgb(197, 199, 194);
+  color: #888;
 }
 
-h1 {
-  color: rgb(113, 156, 28);
-  padding-top: 1vh}
-  
-
-.container {
- display: flex;
- flex-wrap: wrap;
- justify-content: space-around;
+td {
+  border: 3px solid rgb(3, 3, 114);
+  width: 10em;
+  text-align: center;
 }
 
+.titulo {
+  font-weight: bolder;
+}
