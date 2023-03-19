@@ -2,10 +2,10 @@ import React from 'react'
 
 const Form = ({comment}) => {
 
-  const handleChange = (event) => {
-    const { postId, value } = event.target
-    setComments((prevComment) => ({ ...prevComment, [postId]: value }))
-  }
+  // const handleChange = (event) => {
+  //   const { postId, value } = event.target
+  //   setComments((prevComment) => ({ ...prevComment, [postId]: value }))
+  // }
 
 
   return (
@@ -24,7 +24,7 @@ const Form = ({comment}) => {
         <input type='email' name='email' value =  {comment.email} onChange={handleChange}/> */}
 
         <label >Descripción</label>
-        <textarea name='body' value =  {comment.body} onChange={handleChange}/>
+        <textarea name='body' value =  {comment.body} /*onChange={handleChange}*//>
 
       
     </form>
