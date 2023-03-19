@@ -30,8 +30,13 @@ const Home = () => {
     const [pedidos, setPedidos] = useState([]);
     const [showAlert, setShowAlert] = useState('')
 
+    useEffect(()=>{
+        console.log('Se montó el componente')
+
+
+    }, [])
+
     const mostrarPedido = (() => {
-        
             setTimeout(() => {
                 console.log("Se actualizó el componente")
                 setPedidos(pizzas)
@@ -39,19 +44,16 @@ const Home = () => {
         })
     
     useEffect(() => {
-        console.log('Se montó el componente')
         mostrarPedido()
     }, [])
 
    const handleChange = (() => {
+        setPedidos([])
         setShowAlert('El pedido fue cancelado')
         console.log('se desmontó el componente');
+
    })
 
-   const handleAdd = (() => {
-        console.log('Se agrego pizza');
-   })
- 
 
   return (
     <div >
@@ -59,7 +61,6 @@ const Home = () => {
         {pedidos.map(pedido => (
             <div key={pedido.id}>
             <Pizza pedido={pedido}/> 
-            <button onClick={handleAdd}>Agregar a pedido</button>    
             </div>   
         ))}
             <button onClick={handleChange}>Cancelar Pedido</button>
